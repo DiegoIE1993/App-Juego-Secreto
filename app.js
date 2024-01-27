@@ -2,7 +2,6 @@ let numeroSecreto = 0;
 let intentos = 0;
 let listaNumerosSorteados = [];
 let numeroMaximo = 10;
-console.log(numeroSecreto);
 
 function asignarTextoElemento(elemento, texto)
 {
@@ -16,7 +15,7 @@ function verificarIntento()
 {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     
-    console.log(intentos);
+    
     if(numeroDeUsuario === numeroSecreto)
     {
         asignarTextoElemento('p', `¡Felicidades! Has adivinado el número secreto en ${intentos} ${(intentos === 1) ? 'Vez' : 'veces'}`);
